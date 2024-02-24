@@ -740,7 +740,7 @@ display: none;
         width: 100%;
         height: 100%;
         background-image: url('../assets/hero-about-placeholder.png');
-        background-size: 100%;
+        background-size: cover;
         background-position: bottom center;
         filter: brightness(75%) grayscale(100%) contrast(160%);
     }
@@ -1903,7 +1903,7 @@ width: 25%;
             width: 100%;
             height: 100%;
             background-image: url('../assets/hero-about-placeholder.png');
-            background-size: 100%;
+            background-size: cover;
             background-position: center center;
             filter: brightness(75%) grayscale(100%) contrast(160%);
         }
