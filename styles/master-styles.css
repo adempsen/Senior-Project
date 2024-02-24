@@ -739,7 +739,7 @@ display: none;
         right: 0;
         width: 100%;
         height: 100%;
-        background-image: url(assets/hero-about-placeholder.png);
+        background-image: url(hero-about-placeholder.png);
         background-size: 100%;
         background-position: bottom center;
         filter: brightness(75%) grayscale(100%) contrast(160%);
