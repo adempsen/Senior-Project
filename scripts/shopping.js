@@ -79,7 +79,7 @@ function updateSideBarDisplay(){
     imgDescription.innerText = altArray[itemIndex];
 } else {
     // Handle the case when there are no more items in the array
-    sideBarImg.src = "/assets/hero-logo-placeholder.png";
+    sideBarImg.src = "assets/hero-logo-placeholder.png";
     imgDescription.innerText = '';
 }
 }
