@@ -552,6 +552,9 @@ address.contrastMode{
     color: #121212;
 }
 
+small.darkMode, header.darkMode svg span {
+    color: #121212;
+}
 
 
 

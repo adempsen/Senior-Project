@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function(){
       }
   })
   
-  });
+ 
   
   
   const darkModeBtn = document.querySelector('.dark-btn');
@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', function(){
      // CAROUSEL SLIDE SHOW  
   // variables/constants 
   
-      const carousel = document.getElementById("slides-container");
+    const carousel = document.getElementById("slides-container");
     const slide = document.querySelector(".slide");
     const prevBtn = document.getElementById("previous-btn");
     const nextBtn = document.getElementById("next-btn");
@@ -91,4 +91,4 @@ document.addEventListener('DOMContentLoaded', function(){
   
   
       
-  
+  });
