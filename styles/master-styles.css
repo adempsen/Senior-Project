@@ -760,7 +760,7 @@ small.darkMode, header.darkMode svg span {
     margin: auto;
     display: flex;
     flex-direction: column-reverse;
-    width: 90%;
+    width: 100%;
 }
 
 .dsktp-hero-div img {
