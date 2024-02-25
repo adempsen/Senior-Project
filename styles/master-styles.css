@@ -432,6 +432,9 @@ form.darkMode label {
     color: palegreen;
 }
 
+small.darkMode, header.darkMode svg span {
+    color: palegreen;
+}
 
 
 
