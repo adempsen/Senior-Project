@@ -368,6 +368,11 @@ svg.darkMode {
     stroke: palegreen;
 
 }
+#accSvg.darkMode {
+    stroke: palegreen !important;
+}
+
+
 .im-a-button.darkMode, #allVintage.darkMode, #allModern.darkMode, #lighting.darkMode, #allProducts.darkMode, #checkOut.darkMode, #clearCart.darkMode, #form-submit-btn.darkMode {
     background-color: palegreen;
     color: #282828;
@@ -432,7 +437,7 @@ form.darkMode label {
     color: palegreen;
 }
 
-footer small.darkMode, header.darkMode svg span {
+footer small.darkMode, span.darkMode {
     color: palegreen;
 }
 

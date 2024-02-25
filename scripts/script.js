@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function(){
   const hamburger = document.getElementById('hamburger');
   const headerNav = document.getElementById('header-mnu');
   let dropDownSvg = document.getElementById('dropdownSvg');
-  const closeMenuSvg = `id="hamburgerSvg" class="toggle-switch" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width = "100%" height="100">
+  const closeMenuSvg = `id="hamburgerSvg" class="toggle-switch" aria-hidden="false" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width = "100%" height="100">
       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18 18 6m0 12L6 6"/>`;
   const defaultHamburger = `class="drop-down" id="dropdownSvg" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="100%" height="100%">
   <path stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h10"/>`;
@@ -24,10 +24,10 @@ document.addEventListener('DOMContentLoaded', function(){
   accMenuBtn.addEventListener('click', function(){
       accDiv.classList.toggle('show');
       if(accDiv.classList.contains('show')){
-        accMenuBtn.innerHTML = `<svg>class="toggle-switch" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width = "100%" height="100">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18 18 6m0 12L6 6"/>`
+        accMenuBtn.innerHTML = `<svg class="toggle-switch" id="accSvg" aria-hidden="false" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width = "80%" height="80%">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18 18 6m0 12L6 6"/></svg>`
       }else {
-        accMenuBtn.innerHTML = `<svg class="toggle-switch" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+        accMenuBtn.innerHTML = `<svg class="toggle-switch" id="accSvg" aria-hidden="false" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 9a3 3 0 0 1 3-3m-2 15h4m0-3c0-4.1 4-4.9 4-9A6 6 0 1 0 6 9c0 4 4 5 4 9h4Z"/>
       </svg>`
       }
@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', function(){
           darkModeBtn.classList.toggle('active');
           darkModeElements.forEach(function(element){
             element.classList.toggle('darkMode');
-            darkModeIcon.innerHTML = darkModeDefault;
+            
         });
           
          }
