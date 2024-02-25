@@ -76,18 +76,24 @@ document.addEventListener('DOMContentLoaded', function(){
     const prevBtn = document.getElementById("previous-btn");
     const nextBtn = document.getElementById("next-btn");
     
-    nextBtn.addEventListener("click", function(){
-      console.log("next-btn clicked");
-      const slideWidth = slide.clientWidth;
-      carousel.scrollLeft += slideWidth;
-    });
+    if(nextBtn){
+      nextBtn.addEventListener("click", function(){
+        console.log("next-btn clicked");
+        const slideWidth = slide.clientWidth;
+        carousel.scrollLeft += slideWidth;
+      });
+    }
     
-    prevBtn.addEventListener("click", function(){
-      console.log("prev-btn clicked");
-    const slideWidth = slide.clientWidth;
-    carousel.scrollLeft -= slideWidth;
+    if(prevBtn){
+      prevBtn.addEventListener("click", function(){
+        console.log("prev-btn clicked");
+      const slideWidth = slide.clientWidth;
+      carousel.scrollLeft -= slideWidth;
+    
+      });
+
+    }
   
-    });
   
   
       
