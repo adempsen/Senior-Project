@@ -370,9 +370,7 @@ svg.darkMode {
 }
 
 
-#acc-btn.active svg {
-    stroke: palegreen;
-}
+
 
 
 .im-a-button.darkMode, #allVintage.darkMode, #allModern.darkMode, #lighting.darkMode, #allProducts.darkMode, #checkOut.darkMode, #clearCart.darkMode, #form-submit-btn.darkMode {
@@ -590,6 +588,7 @@ small.darkMode, header.darkMode svg span {
 /* -------------------------------------------------------------------- */
 #home-main {
     margin: 100px 0 0 0;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -754,7 +753,7 @@ small.darkMode, header.darkMode svg span {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    width: 95%;
+    width: 100%;
 }
 
 .dsktp-hero-div {
