@@ -1310,6 +1310,14 @@ display: none;
 /* CART STYLES  */
 /* ----------------------------------------------------------------- */
 
+main.cart {
+    width: 100%;
+    margin: 90px auto;
+}
+
+main.cart h1 {
+    margin-left: 10px;
+}
 .wrapper-for-cart {
     display: flex;
     flex-direction: column;
