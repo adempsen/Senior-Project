@@ -460,6 +460,12 @@ svg.contrastMode {
     stroke: #121212;
 
 }
+#logo.contrastMode {
+    background-color: #121212;
+    border-radius: 4px;
+    padding: 5px;
+
+}
 svg.contrastMode:hover {
     stroke: #4A7570;
 
@@ -1445,11 +1451,17 @@ width: 25%;
 
 
 #cart-payment {
-    visibility: none;
+    visibility: hidden;
+    width: 0;
+    transition: width 0.2s ease;
+    
 }
 
 #cart-payment.show {
+    visibility: visible;
     display: block;
+    width: 50%;
+
 }
 /* ------------------------------------------------------------------------ */
 
