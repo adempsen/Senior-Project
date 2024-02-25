@@ -47,6 +47,12 @@ document.addEventListener('DOMContentLoaded', function(){
   darkModeBtn.addEventListener('click', function(){
       console.log("dark/light mode toggled");
       darkModeBtn.classList.toggle('active');
+      if(contrastModeBtn.classList.contains('active')){
+        contrastModeBtn.classList.toggle('active');
+        contrastModeElements.forEach(function(element){
+          element.classList.toggle('contrastMode');
+      });
+      }
       if(darkModeBtn.classList.contains('active')){
           darkModeIcon.innerHTML = lightModeSvg;
       }else {
@@ -62,6 +68,15 @@ document.addEventListener('DOMContentLoaded', function(){
       const contrastModeElements = document.querySelectorAll('.toggle-switch');
       contrastModeBtn.addEventListener('click', function(){
          console.log("contrast mode toggled");
+         contrastModeBtn.classList.toggle('active');
+         if(darkModeBtn.classList.contains('active')){
+          darkModeBtn.classList.toggle('active');
+          darkModeElements.forEach(function(element){
+            element.classList.toggle('darkMode');
+            darkModeIcon.innerHTML = darkModeDefault;
+        });
+          
+         }
          contrastModeElements.forEach(function(element){
              element.classList.toggle('contrastMode');
          });
