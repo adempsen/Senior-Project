@@ -368,8 +368,8 @@ svg.darkMode {
     stroke: palegreen;
 
 }
-#accSvg.darkMode {
-    stroke: palegreen !important;
+.header-btn svg.darkMode {
+    stroke: palegreen;
 }
 
 
