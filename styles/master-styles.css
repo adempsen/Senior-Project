@@ -226,7 +226,8 @@ header {
     left: 0;
     width: 0;
     text-align: center;
-    transition: width 0.5s ease;
+    transition: width 0.3s ease;
+    box-shadow: var(--drop-shadow);
 }
 
 #header-mnu.show ul {
@@ -290,9 +291,11 @@ visibility: hidden;
 overflow: hidden;
 width: 0;
 text-align: center;
-transition: width 0.5s ease;
-background-color: var(--eclectic-orange);
+transition: width 0.3s ease;
+background-color: var(--test-div-width);
+box-shadow: var(--drop-shadow);
 }
+
 
 #acc-container.show {
 display: inline-flex;
@@ -322,6 +325,8 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 10px;
+    padding: 15px;
 
 }
 
@@ -335,12 +340,20 @@ footer {
     justify-content: space-evenly;
 
 }
+.social-links-container svg {
+    box-shadow: var(--drop-shadow);
+}
 
+.social-links-container svg:hover {
+    filter: invert(100%);
+}
 footer small {
     padding: 5px;
-    text-align: center;
+    text-align: left;
     align-self: center;
 }
+
+
 /* ---------------------------------------------------------- */
 /* COLOR MODES */
 /* ----------------------------------------------------------- */
@@ -1026,21 +1039,6 @@ display: none;
         
     }
 
-    .map {
-        margin: auto;
-        display: flex;
-        background-color: antiquewhite;
-        width: 80%;
-        justify-content: center;
-        padding: 25px 10px 25px 10px;
-        border-radius: 4px;
-        box-shadow: var(--drop-shadow);
-            
-        }
-        iframe {
-            width: 90%;
-            box-shadow: var(--drop-shadow);
-        }
         
         .about-btm-links {
             width: 100%;
@@ -1064,14 +1062,17 @@ display: none;
         
         #about-consignment dl {
             font-family: Arial, Helvetica, sans-serif;
-            margin: auto;
-            padding-left: 10px;
-            padding-right: 10px;  
+            margin: 10px auto 0 auto;
             width: 80%;
             text-align: left;
             padding: 10px;
             background-color: var(--aged-navy);
             border-radius: 5px;
+            line-height: 1.2;
+        }
+
+        #about-consignment dt {
+            font-weight: 600;
         }
 
         #about-consignment dl dd, #about-consignment dt {
