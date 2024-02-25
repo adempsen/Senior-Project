@@ -17,7 +17,7 @@
 
             
     <div class="header-content-wrapper">
-        <button aria-label="Open Menu" class="header-btn" id="hamburger"><svg class="drop-down" id="dropdownSvg" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="100%" height="100%">
+        <button aria-label="Open Menu" class="header-btn" id="hamburger"><svg class="drop-down toggle-switch" id="dropdownSvg" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="100%" height="100%">
           <path stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h10"/>
         </svg></button>
 
@@ -25,25 +25,25 @@
       
      
         <div class="header-right-container">
-      <button class="header-btn" aria-label="Open Color Mode Menu" id="acc-menu-btn"><svg class="w-[25px] h-[25px] text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 9a3 3 0 0 1 3-3m-2 15h4m0-3c0-4.1 4-4.9 4-9A6 6 0 1 0 6 9c0 4 4 5 4 9h4Z"/>
+      <button class="header-btn" aria-label="Open Color Mode Menu" id="acc-menu-btn"><svg class="toggle-switch" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 9a3 3 0 0 1 3-3m-2 15h4m0-3c0-4.1 4-4.9 4-9A6 6 0 1 0 6 9c0 4 4 5 4 9h4Z"/>
       </svg></button>
 
      
-        <div id="acc-container">
+        <div id="acc-container" class="toggle-switch">
         
-            <button aria-label="Select Dark Mode" class="dark-btn header-btn"><svg id="dark-svg" class="w-[44px] h-[44px] text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="60px" height="60px">
+            <button aria-label="Select Dark Mode" class="dark-btn header-btn"><svg id="dark-svg" class="toggle-switch" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="60px" height="60px">
               <path  stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 21a9 9 0 0 1-.5-18v0A9 9 0 0 0 20 15h.5a9 9 0 0 1-8.5 6Z"/>
             </svg><span>NIGHT-MODE</span></button>
         
-          <button aria-label="Select Contrast Mode" class="contrast-btn header-btn"><svg class="w-[44px] h-[44px] text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="black" viewBox="0 0 24 24" width="60px" height="60px">
+          <button aria-label="Select Contrast Mode" class="contrast-btn header-btn"><svg class="toggle-switch" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="black" viewBox="0 0 24 24" width="60px" height="60px">
             <path fill-rule="evenodd" d="M5 7.8C6.7 6.3 9.2 5 12 5s5.3 1.3 7 2.8a12.7 12.7 0 0 1 2.7 3.2c.2.2.3.6.3 1s-.1.8-.3 1a2 2 0 0 1-.6 1 12.7 12.7 0 0 1-9.1 5c-2.8 0-5.3-1.3-7-2.8A12.7 12.7 0 0 1 2.3 13c-.2-.2-.3-.6-.3-1s.1-.8.3-1c.1-.4.3-.7.6-1 .5-.7 1.2-1.5 2.1-2.2Zm7 7.2a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" clip-rule="evenodd"/>
           </svg><span>CONTRAST-MODE</span></button>
 
         </div>
         
          <div class="header-btn">
-            <a href="cart.html" aria-label="Link to Shopping Cart"><div class="cart-svg-div"><svg class="header-btn" xmlns="http://www.w3.org/2000/svg" width="60px" height="60px" viewBox="0 0 24 24">
+            <a href="cart.html" aria-label="Link to Shopping Cart"><div class="cart-svg-div"><svg class="header-btn toggle-switch" xmlns="http://www.w3.org/2000/svg" width="60px" height="60px" viewBox="0 0 24 24">
               <path d="M20.756 5.345A1.003 1.003 0 0 0 20 5H6.181l-.195-1.164A1 1 0 0 0 5 3H2.75a1 1 0 1 0 0 2h1.403l1.86 11.164l.045.124l.054.151l.12.179l.095.112l.193.13l.112.065a.97.97 0 0 0 .367.075H18a1 1 0 1 0 0-2H7.847l-.166-1H19a1 1 0 0 0 .99-.858l1-7a1.002 1.002 0 0 0-.234-.797M18.847 7l-.285 2H15V7zM14 7v2h-3V7zm0 3v2h-3v-2zm-4-3v2H7l-.148.03L6.514 7zm-2.986 3H10v2H7.347zM15 12v-2h3.418l-.285 2z" />
               <circle cx="8.5" cy="19.5" r="1.5" />
               <circle cx="17.5" cy="19.5" r="1.5"/>
@@ -55,22 +55,22 @@
     <nav  id="header-mnu">
            
          
-      <ul>
-          <li><a href="index.html">HOME</a></li>
-          <li><a href="about.html">ABOUT</a></li>
-          <li><a href="gallery.html">GALLERY</a></li>
-          <li><a href="contact.html">CONTACT</a></li>
+      <ul class="toggle-switch">
+          <li class="toggle-switch"><a href="index.html">HOME</a></li>
+          <li class="toggle-switch"><a href="about.html">ABOUT</a></li>
+          <li class="toggle-switch"><a href="gallery.html">GALLERY</a></li>
+          <li class="toggle-switch"><a href="contact.html">CONTACT</a></li>
       </ul>
    
   </nav> 
  
 
 </header>
-    <main class="cart">
+    <main class="cart toggle-switch">
         
         <!-- cart display side bar -->
-        <section id="display-and-cart-section">
-          <h1>shopping cart</h1>
+        <section id="display-and-cart-section" class="toggle-switch">
+          <h1 class="toggle-switch">shopping cart</h1>
                 <div id="side-bar-container">
                     <div id="side-bar-img-wrapper">
                         <img id="side-bar-img" src="assets/hero-metro-logo.svg" alt="Logo For Metro Eclectic">
@@ -91,21 +91,21 @@
                       </div>
                      
                           <div id="cart-check-out-wrapper">
-                            <p id="cart-status">your cart is empty</p>
-                              <p id="totalDamage">Total:</p>
+                            <p id="cart-status" class="toggle-switch">your cart is empty</p>
+                              <p id="totalDamage" class="toggle-switch">Total:</p>
                              <div class="check-please">
-                                <button class="im-a-button" id="checkOut">Check Out</button>
-                                <button class="im-a-button" id="clearCart">Cancel</button>
+                                <button class="im-a-button toggle-switch" id="checkOut">Check Out</button>
+                                <button class="im-a-button toggle-switch" id="clearCart">Cancel</button>
                              </div>
                           </div>
                    </div>
           
          
     </section>
-    <section id="cart-payment">
-      <h3>Payment</h3>
+    <section id="cart-payment" class="toggle-switch">
+      <h3 class="toggle-switch">Payment</h3>
      
-        <div id="payment-form">
+        <div id="payment-form" class="toggle-switch">
             <form action="#" method="post" target="_blank">
                 <label for="cardholder">Cardholder Name:</label>
                 <input type="text" id="cardholder" name="cardholder" required>
@@ -120,8 +120,8 @@
                 <input type="text" id="cvv" name="cvv" pattern="[0-9]{3}" required>
         
                 <div id="payment-form-btn-wrapper">
-                    <button type="submit" id="payment-submit-btn" class="im-a-button">Submit Payment</button>
-                    <button type="reset" id="payment-reset-btn" class="im-a-button">Cancel/Reset Form</button>
+                    <button type="submit" id="payment-submit-btn" class="im-a-button toggle-switch">Submit Payment</button>
+                    <button type="reset" id="payment-reset-btn" class="im-a-button toggle-switch">Cancel/Reset Form</button>
                 </div>
             </form>
         </div>
@@ -131,15 +131,15 @@
 
     </main>
     <footer class="toggle-switch">
-      <div class="top-link im-a-button">
+      <div class="top-link im-a-button toggle-switch">
         <a href="#home-main">Back to Top</a>
       </div>
-        <!-- Copyright information and outside links -->
+       
         <div class="social-links-container">
-          <a href="#" aria-label="Instagram Link"><svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24"><path d="M18.667 5.823v1.687c0 .271-.222.49-.497.49h-1.674c-.274 0-.496-.219-.496-.49v-1.687c0-.271.222-.49.496-.49h1.674c.275 0 .497.219.497.49zm5.333-5.823v24h-24v-24h24zm-4 10h-4.518c.362.609.581 1.313.581 2.073 0 2.249-1.824 4.073-4.073 4.073-2.25 0-4.073-1.824-4.073-4.073 0-.76.219-1.464.581-2.073h-4.498v6.852c0 1.738 1.451 3.148 3.19 3.148h9.662c1.738 0 3.148-1.41 3.148-3.148v-6.852zm-8.01 5.21c1.73 0 3.137-1.408 3.137-3.138 0-.939-.416-1.783-1.071-2.358-.23-.202-.49-.371-.772-.499-.395-.18-.833-.28-1.294-.28-.462 0-.899.101-1.294.28-.282.128-.542.297-.771.499-.656.575-1.072 1.419-1.072 2.358-.001 1.731 1.407 3.138 3.137 3.138zm8.01-8.062c0-1.738-1.41-3.148-3.148-3.148h-8.185v3.333h-.667v-3.333h-.667v3.333h-.666v-3.282c-.231.038-.455.095-.667.18v3.103h-.667v-2.735c-.801.571-1.333 1.497-1.333 2.549v2.186h4.982c.778-.855 1.866-1.334 3.008-1.334 1.148 0 2.233.483 3.007 1.333h5.003v-2.185zm-8 7.244c1.281 0 2.319-1.038 2.319-2.319s-1.038-2.319-2.319-2.319-2.319 1.038-2.319 2.319 1.038 2.319 2.319 2.319z"/></svg></a>
-          
-          <a href="#" aria-label="Facebook Link"><svg xmlns="http://www.w3.org/2000/svg" width="44px" height="44px" viewBox="0 0 24 24"><path d="M0 0v24h24v-24h-24zm16 7h-1.923c-.616 0-1.077.252-1.077.889v1.111h3l-.239 3h-2.761v8h-3v-8h-2v-3h2v-1.923c0-2.022 1.064-3.077 3.461-3.077h2.539v3z"/></svg></a>
-      </div>
+            <a href="#" aria-label="Instagram Link"><svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" class="toggle-switch"><path d="M18.667 5.823v1.687c0 .271-.222.49-.497.49h-1.674c-.274 0-.496-.219-.496-.49v-1.687c0-.271.222-.49.496-.49h1.674c.275 0 .497.219.497.49zm5.333-5.823v24h-24v-24h24zm-4 10h-4.518c.362.609.581 1.313.581 2.073 0 2.249-1.824 4.073-4.073 4.073-2.25 0-4.073-1.824-4.073-4.073 0-.76.219-1.464.581-2.073h-4.498v6.852c0 1.738 1.451 3.148 3.19 3.148h9.662c1.738 0 3.148-1.41 3.148-3.148v-6.852zm-8.01 5.21c1.73 0 3.137-1.408 3.137-3.138 0-.939-.416-1.783-1.071-2.358-.23-.202-.49-.371-.772-.499-.395-.18-.833-.28-1.294-.28-.462 0-.899.101-1.294.28-.282.128-.542.297-.771.499-.656.575-1.072 1.419-1.072 2.358-.001 1.731 1.407 3.138 3.137 3.138zm8.01-8.062c0-1.738-1.41-3.148-3.148-3.148h-8.185v3.333h-.667v-3.333h-.667v3.333h-.666v-3.282c-.231.038-.455.095-.667.18v3.103h-.667v-2.735c-.801.571-1.333 1.497-1.333 2.549v2.186h4.982c.778-.855 1.866-1.334 3.008-1.334 1.148 0 2.233.483 3.007 1.333h5.003v-2.185zm-8 7.244c1.281 0 2.319-1.038 2.319-2.319s-1.038-2.319-2.319-2.319-2.319 1.038-2.319 2.319 1.038 2.319 2.319 2.319z"/></svg></a>
+            
+            <a href="#" aria-label="Facebook Link"><svg xmlns="http://www.w3.org/2000/svg" width="44px" height="44px" viewBox="0 0 24 24" class="toggle-switch"><path d="M0 0v24h24v-24h-24zm16 7h-1.923c-.616 0-1.077.252-1.077.889v1.111h3l-.239 3h-2.761v8h-3v-8h-2v-3h2v-1.923c0-2.022 1.064-3.077 3.461-3.077h2.539v3z"/></svg></a>
+        </div>
         <small>This Website is for Educational and Demonstration Purposes only<br>&copy; 2024 | Andrew Dempsen | MightyComfy Design<br>Last Updated 30 January 2024</small>
     </footer>
     

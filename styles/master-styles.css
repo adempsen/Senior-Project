@@ -205,6 +205,10 @@ header {
    
 }
 
+.header-btn svg:hover {
+    stroke: white;
+}
+
 .header-btn span {
     font-size: .5rem;
     display: inline-block;
@@ -238,16 +242,17 @@ header {
 
 #header-mnu ul li {
     width: 100%;
-    padding: 5px;
+    padding: 10px;
     color: white;
 }
 #header-mnu ul li a {
     color: white;
-    padding: 5px;
+    padding: 15px;
+ 
 }
 
-#header-mnu ul li:hover, #header-mnu ul a:hover  {
-    background-color: var(--eclectic-orange);
+#header-mnu ul li:hover {
+    background-color:#4a5f75b7;
     color: white;
 }
 
@@ -265,6 +270,15 @@ header {
     text-decoration: none;
     list-style-type: none;
     color: var(--eclectic-orange);
+}
+
+.im-a-button:hover, .im-a-button:focus {
+    padding: 15px;
+    color: antiquewhite;
+}
+
+.im-a-button:active {
+    background-color: #4A7570;
 }
 
 
@@ -332,24 +346,205 @@ footer small {
 /* COLOR MODES */
 /* ----------------------------------------------------------- */
 body.darkMode {
-    color: white;
-    background: rgb(27,31,58);
-    background: -moz-radial-gradient(circle, rgba(27,31,58,1) 0%, rgba(83,53,74,1) 100%);
-    background: -webkit-radial-gradient(circle, rgba(27,31,58,1) 0%, rgba(83,53,74,1) 100%);
-    background: radial-gradient(circle, rgba(27,31,58,1) 0%, rgba(83,53,74,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1b1f3a",endColorstr="#53354a",GradientType=1);
+    background: rgb(40,40,40);
+    background: -moz-radial-gradient(circle, rgba(40,40,40,1) 52%, rgba(0,0,0,1) 100%);
+    background: -webkit-radial-gradient(circle, rgba(40,40,40,1) 52%, rgba(0,0,0,1) 100%);
+    background: radial-gradient(circle, rgba(40,40,40,1) 52%, rgba(0,0,0,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#282828",endColorstr="#000000",GradientType=1);
 }
+
+
+
+h1.darkMode, h2.darkMode, h3.darkMode {
+    color: palegreen;
+}
+
+header.darkMode, footer.darkMode, main.cart.darkMode {
+    background-color: #282828;
+    
+}
+
+svg.darkMode {
+    stroke: palegreen;
+
+}
+.im-a-button.darkMode, #allVintage.darkMode, #allModern.darkMode, #lighting.darkMode, #allProducts.darkMode, #checkOut.darkMode, #clearCart.darkMode, #form-submit-btn.darkMode {
+    background-color: palegreen;
+    color: #282828;
+}
+.im-a-button.darkMode a {
+    color: #282828;
+}
+.home-p.darkMode, #gallery-main p.darkMode, #contact-main p.darkMode {
+    color: palegreen;
+    background-color: #282828;
+}
+
+#header-mnu ul.darkMode {
+    background-color: #282828;
+    color: palegreen;
+}
+#header-mnu ul.darkMode li:hover {
+   background-color: palegreen;
+   color: #282828;
+}
+
+#header-mnu ul.darkMode li a:hover {
+    color: #282828;
+}
+#acc-container.darkMode {
+    background-color: #282828;
+}
+ li.darkMode  {
+    background-color: #282828;
+    color: palegreen;
+ }
+
+ #header-mnu ul li.darkMode  {
+    background-color: #282828;
+    color: palegreen;
+ }
+
+ #header-mnu ul li.darkMode a:hover  {
+    background-color: white;
+    color: #282828;
+ }
+
+#cart-check-out-wrapper p.darkMode {
+    color: white;
+}
+
+#about-consignment.darkMode {
+    background-color: #282828;
+}
+
+#about-main p.darkMode, #about-consignment dl.darkMode, #about-consignment p.darkMode {
+    background-color: transparent;
+    color: palegreen;
+
+}
+
+#about-consignment dl.darkMode dt, #about-consignment dl.darkMode dd {
+    color: palegreen;
+}
+
+form.darkMode label {
+    color: palegreen;
+}
+
+
+
+
+
 /* -------------------------------------------------------------------- */
 /* CONTRAST MODE STYLES */
 /* ---------------------------------------------------------------------- */
-.toggle-switch.contrastMode {
-    color: black;
+body.contrastMode {
+    color: #121212;
     background: rgb(248,244,236);
     background: -moz-radial-gradient(circle, rgba(248,244,236,1) 0%, rgba(187,187,187,1) 100%);
     background: -webkit-radial-gradient(circle, rgba(248,244,236,1) 0%, rgba(187,187,187,1) 100%);
     background: radial-gradient(circle, rgba(248,244,236,1) 0%, rgba(187,187,187,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f8f4ec",endColorstr="#bbbbbb",GradientType=1);
 }
+h1.contrastMode, h2.contrastMode, h3.contrastMode {
+    color: #121212;
+}
+
+header.contrastMode, footer.contrastMode, main.cart.contrastMode {
+    background-color: var(--off-white);
+    
+}
+
+svg.contrastMode {
+    stroke: #121212;
+
+}
+svg.contrastMode:hover {
+    stroke: #4A7570;
+
+}
+.im-a-button.contrastMode, #allVintage.contrastMode, #allModern.contrastMode, #lighting.contrastMode, #allProducts.contrastMode, #checkOut.contrastMode, #clearCart.contrastMode, #form-submit-btn.contrastMode  {
+    background-color: #121212;
+    color: var(--off-white);
+}
+.top-link.im-a-button.contrastMode a, .about-info ul.contrastMode li a {
+    color: var(--off-white);
+}
+
+#about-subheader.contrastMode {
+    background-color: var(--off-white);
+}
+
+address.contrastMode{
+    color: #121212;
+}
+.im-a-button.contrastMode a {
+    color: #121212;
+}
+.home-p.contrastMode, #gallery-main p.contrastMode, #contact-main p.contrastMode {
+    color: #121212;
+    background-color: var(--off-white);
+}
+#header-mnu ul.contrastMode a {
+    color: #121212;
+}
+
+
+#header-mnu ul.contrastMode {
+    background-color: var(--off-white);
+    color: #121212;
+}
+#header-mnu ul.contrastMode li:hover {
+   background-color: var(--off-white);
+   color: #121212;
+}
+
+#header-mnu ul.contrastMode li a:hover {
+    color: #282828;
+}
+#acc-container.contrastMode {
+    background-color: var(--off-white);
+}
+ li.contrastMode  {
+    background-color: var(--off-white);
+    color: #121212;
+ }
+
+ #header-mnu ul li.contrastMode  {
+    background-color: var(--off-white);
+    color: #121212;
+ }
+
+ #header-mnu ul li.contrastMode a:hover  {
+    background-color: white;
+    color: #282828;
+ }
+
+#cart-check-out-wrapper p.contrastMode {
+    color: #121212;
+}
+
+#about-consignment.contrastMode {
+    background-color: var(--off-white);
+}
+
+#about-main p.contrastMode, #about-consignment dl.contrastMode, #about-consignment p.contrastMode {
+    background-color: var(--off-white);
+    color: #121212;
+
+}
+
+#about-consignment dl.contrastMode dt, #about-consignment dl.contrastMode dd {
+    color: #121212;
+}
+
+#user-form.contrastMode label {
+    color: #121212;
+}
+
+
+
 
 /* ----------------------------------------------------------------- */
 
@@ -594,6 +789,10 @@ border-radius: 4px;
     padding: 15px;
 }
 
+.sub-menu button:active {
+    background-color: #F58720;
+}
+
 .sub-menu ul {
     box-sizing: border-box;
     width: 100%;
@@ -618,6 +817,8 @@ nav.sub-menu li button {
 #allProducts:hover {
     padding: 10px 35px 10px 35px;
 }
+
+
 
 #subDiv-vin {
 display: none;
@@ -706,6 +907,14 @@ display: none;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
     margin: 0;
     border-radius: 4px;
+}
+
+.apiCartBtn:hover {
+    background-color: #4A7570;
+}
+
+.apiCartBtn:active {
+    background-color: #F58720;
 }
 
 
@@ -987,6 +1196,11 @@ display: none;
      box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
      margin: 0;
    }
+
+   #form-submit-btn:hover {
+    background-color: antiquewhite;
+    color: black;
+   }
    /* --------------------------------------------------------------- */
 
    
@@ -1152,7 +1366,7 @@ box-shadow: var(--drop-shadow);
     justify-content: center;
     align-items: center;
 }
-.chec-please button {
+.check-please button {
     width: 100%;
 }
 
@@ -1312,62 +1526,6 @@ width: 25%;
 
 
 
-
-
-
-
-
-/* BREAKPOINTS */
-/* @media screen and (min-width: 480px) {
-
-
-.main-hero {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
-
-
-.banner-logo {
-    justify-content: space-around;
-    align-items: flex-start;
-    flex-direction: row;
-
-}
-
-.banner-logo h1 {
-    font-size: 3rem;
-}
-#logo {
-    width: 45%;
-}
-
-#hero {
-    width: 100%;
-}
-
-.slides-container img {
-    max-width: 350px;
-    max-height: 350px;
-    padding: 10px;
-}
-
-
-
-
-} */
-
-
-
-
-
-
-
-
-
-
 @media screen and (min-width: 800px) {
     
     body{
@@ -1445,7 +1603,7 @@ width: 25%;
     .dark-btn, .contrast-btn {
         width: 15%;
     } 
-
+   
     
 
     .header-button.cart-svg-div {
@@ -1478,14 +1636,19 @@ width: 25%;
         width: 100%;
         padding: 15px;
         color: white;
+        background-color: var(--test-div-width);
     }
+
+  
+
+
     #header-mnu ul li a {
         color: white;
         padding: 5px;
     }
     
     #header-mnu ul li:hover, #header-mnu ul a:hover  {
-        background-color: var(--eclectic-orange);
+        background-color: var(--aged-navy);
         color: white;
     }
     
