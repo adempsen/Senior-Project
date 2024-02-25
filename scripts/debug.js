@@ -69,29 +69,7 @@ const hamburger = document.getElementById('hamburger');
   
      });
 
-// SUB Menu functions 
 
-// const vinSubNavBtn = document.getElementById("subBtn-vin");
-// const con_subNav_event = document.getElementById("subBtn-con");
-// const vin_subNav_div = document.getElementById('subDiv-vin');
-// const con_subNav_div = document.getElementById('subDiv-con');
-
-// vinSubNavBtn.addEventListener('click', function(){
-//         console.log("hidden nav click");
-//         vin_subNav_div.classList.toggle('subNavActive');
-// });
-
-// con_subNav_event.addEventListener('click', function(){
-//     console.log("hidden nav click");
-//     con_subNav_div.classList.toggle('subNavActive');
-    
-
-// });
-
-// ---------------------------------------------------------------
-
-
-// API PRODUCT PAGE 
 
 const gitHubEndPoint = "https://raw.githubusercontent.com/adempsen/mockAPI_me/main/new.json";
 const productContainer = document.getElementById('productContainer');
